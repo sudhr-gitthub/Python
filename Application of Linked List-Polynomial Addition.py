@@ -55,7 +55,6 @@ def add_polynomials(p1, p2):
 
     return result
 
-# ---------- Input Section ----------
 def get_polynomial_input(n):
     poly = Polynomial()
     print(f"Enter {n} terms as 'coefficient power':")
@@ -64,15 +63,12 @@ def get_polynomial_input(n):
         poly.insert_term(coeff, power)
     return poly
 
-# Get input for first polynomial
 n1 = int(input("Enter number of terms in first polynomial: "))
 poly1 = get_polynomial_input(n1)
 
-# Get input for second polynomial
 n2 = int(input("Enter number of terms in second polynomial: "))
 poly2 = get_polynomial_input(n2)
 
-# Add and display result
 print("\nPolynomial 1:")
 poly1.display()
 
@@ -81,4 +77,5 @@ poly2.display()
 
 result = add_polynomials(poly1, poly2)
 print("Resultant Polynomial:")
+
 result.display()
